@@ -1,0 +1,22 @@
+html    {
+    scroll-behavior: smooth;
+}
+
+.nav-list   {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    background-color: #9AF0CA;
+}
+
+.nav-link   {
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    color: #16AFE2;
+}
+
+.container  {
+    max-width: 1440px;
+    margin: 0 auto;
+}
