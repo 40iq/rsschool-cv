@@ -1,23 +1,35 @@
-html    {
+html  {
     scroll-behavior: smooth;
 }
 
-body   {
+body  {
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
     line-height: 1.5;
     font-size: 18px;
+    margin: 0;
+}
+
+ul  {
+    margin-top: 0;
+}
+
+.header  {
+    display: block;
+    position: fixed;
+    max-width: 1440px;
+    width: 100%;
+    top: 0;
 }
 
 
-.nav-list   {
+.nav-list  {
     display: flex;
     list-style: none;
     justify-content: flex-end;
     background-color: #9AF0CA;
 }
 
-.nav-link   {
+.nav-link  {
     padding: 0 20px;
     line-height: 50px;
     text-decoration: none;
@@ -27,24 +39,26 @@ body   {
 }
 
 .container  {
+    padding-top: 50px;
     max-width: 1440px;
     margin: 0 auto;
     background-color: #E3EAEC;
 }
 
-.section-profile-img   {
-    width: 400px;
-    height: 550px;
+.section-profile-img  {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 400px;
+    max-height: 550px;
+    width: 100%;
+    height: 100%;
 }
 
-.section    {
+.section  {
     display: block;
     margin-left: 100px;
-    margin-right: 100px;
-    text-align: center;   
+    margin-right: 100px;  
 }
 
 .section-title  {
@@ -52,3 +66,41 @@ body   {
     font-weight: bold;
     font-size: 2em;
 }
+
+.section-item  {
+    position: relative;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    padding-left: 30px;
+    font-weight: bolder;
+    color: rgb(23, 192, 243);
+    font-size: 35px;
+}
+
+p  {
+    text-align: center;
+}
+
+
+@media (max-width:500px) {
+    .section-title {
+        font-size: 1em;
+    }    
+}
+
+ @media (max-width: 700px) {
+    .header {
+        width: 50%;
+        position: absolute;
+        right: 0;
+        display: none;
+    }
+    .nav-list  {
+        flex-direction: column;
+    }
+    .header-button {
+        display: block;
+    }
+}
+ 
