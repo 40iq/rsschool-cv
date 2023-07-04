@@ -2,6 +2,9 @@ html  {
     scroll-behavior: smooth;
 }
 
+*  {
+    box-sizing: border-box;
+}
 body  {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
@@ -21,12 +24,19 @@ ul  {
     top: 0;
 }
 
+.summary-text  {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
 
 .nav-list  {
     display: flex;
     list-style: none;
     justify-content: flex-end;
     background-color: #9AF0CA;
+    list-style-type: none;
 }
 
 .nav-link  {
@@ -57,14 +67,14 @@ ul  {
 
 .section  {
     display: block;
-    margin-left: 100px;
-    margin-right: 100px;  
+
 }
 
 .section-title  {
     text-align: center;
     font-weight: bold;
     font-size: 2em;
+    margin-top: 0;
 }
 
 .section-item  {
@@ -89,18 +99,53 @@ p  {
     }    
 }
 
- @media (max-width: 700px) {
-    .header {
-        width: 50%;
-        position: absolute;
+
+#hamburger, [for=hamburger]  {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    [for=hamburger]  {
+        display: block;
+        position: fixed;
+        width: 30px;
+        text-align: center;
         right: 0;
+        color: rgb(243, 2, 2);
+        font-size: 20px;
+        user-select: none;
+    }
+    [for=hamburger]::before{
+        content: '☰';
+    }
+    
+    .nav  {
         display: none;
     }
-    .nav-list  {
+
+    .nav-list {
         flex-direction: column;
+        right: 0;
+        width: 100px;
     }
-    .header-button {
+
+    .container  {
+        padding-top: 0;
+    }
+
+    .nav-link  {
+        padding: 0 10px;
+        line-height: 10px;
+        text-decoration: none;
+        color: #347be4;
+        font-weight: 600;
+        font-size: 0.5em;
+    }
+
+    #hamburger:checked + label + nav  {
         display: block;
     }
+    #hamburger:checked +[for=hamburger]::before{
+        content: 'X';
+    }
 }
- 
