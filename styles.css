@@ -46,6 +46,10 @@ ul  {
     color: #347be4;
     font-weight: 600;
     font-size: 1.1em;
+    transition: .3s;
+}
+.nav-link:hover  {
+    color: #7DA4DF;
 }
 
 .container  {
@@ -77,21 +81,37 @@ ul  {
     margin-top: 0;
 }
 
-.section-item  {
-    position: relative;
+.section-list  {
     margin: 0;
-    margin-bottom: 10px;
+    margin-left: 10px;
     padding: 0;
     padding-left: 30px;
+    list-style: none;
+}
+
+.list-img  {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+span  {
+    color: rgba(41, 111, 177, 0.63);
+}
+
+.section-item  {
+    position: relative;
+    width: 100%;
+    margin: 5px auto;
+    padding: 5px 10px;
     font-weight: bolder;
-    color: rgb(23, 192, 243);
-    font-size: 35px;
+    font-size: 2em;
+    color: rgb(102, 98, 94);
 }
 
 p  {
     text-align: center;
 }
-
 
 @media (max-width:500px) {
     .section-title {
@@ -99,8 +119,8 @@ p  {
     }    
 }
 
-
-#hamburger, [for=hamburger]  {
+#hamburger,
+[for=hamburger]  {
     display: none;
 }
 
@@ -126,11 +146,8 @@ p  {
     .nav-list {
         flex-direction: column;
         right: 0;
-        width: 100px;
-    }
-
-    .container  {
-        padding-top: 0;
+        width: 70px;
+        padding: 0;
     }
 
     .nav-link  {
@@ -142,10 +159,70 @@ p  {
         font-size: 0.5em;
     }
 
-    #hamburger:checked + label + nav  {
+    #hamburger:checked +[for=hamburger] + nav  {
         display: block;
     }
     #hamburger:checked +[for=hamburger]::before{
         content: 'X';
     }
+}
+
+code  {
+    box-sizing: border-box;
+    display: block;
+    background-color: antiquewhite;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.footer-section  {
+    background-color: #9AF0CA;
+    padding: 0;
+}
+
+.contact-link  {
+    line-height: 50px;
+    text-decoration: none;
+    color: #1a5bbd;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: .3s;
+}
+.contact-link:hover  {
+    color: #8eaedd;
+}
+
+.footer-container  {
+    display: flex;
+    justify-content: space-between;
+    background-color: #9AF0CA;
+    max-width: 1440px;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.rs-logo  {
+    width: 120px;
+    height: 60px;
+}
+
+.gh-logo  {
+    width: 40px;
+    height: 40px;
+}
+
+.gh-link  {
+    line-height: 50px;
+    text-decoration: none;
+    color: #347be4;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: .3s;
+}
+.gh-link:hover  {
+    color: #7DA4DF;
 }
