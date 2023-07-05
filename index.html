@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <title>rsschool-cv</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <input type="checkbox" id="hamburger">
+            <label for="hamburger"></label>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#profile" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#summary" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Examples</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#language" class="nav-link">Language</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="section" id="profile">
+                <h1 class="section-title">Max Schcerbakov</h1>
+                <img src="./assets/img/Img1.jpg" alt="Yep, that's me" class="section-profile-img">
+            </section>
+            <section class="section" id="summary">
+                <h2 class="section-title">Some words about Me</h2>
+                <p class="summary-text">My name is Max, i'm 23 years old. My goal is try myself in Front-end development by passing the Rsschool courses. My strengths are Flexibility and ability to adapt to complexities. Unfortunately, I don't have much experience, but I have a great interest and desire to develop in this direction.</p>
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="section-title">Contacts</h2>
+                <ul class="section-list">
+                    <li class="section-item"><a href="https://github.com/40iq" class="contact-link" title="GitHub" target="_blank">GitHub</a></li>
+                    <li class="section-item">Phone: <span>8-(931)-379-5x-xx</span></li>
+                    <li class="section-item">Discord: <a href="https://discordapp.com/users/364465255419478016/" class="contact-link" title="Discord" target="_blank">40iq#0810</a></li>
+                    <li class="section-item">Email: <span>maksPTD6@mail.ru</span></li>
+                </ul>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul class="section-list">
+                    <li class="section-item">Version control:<span> Git, GitHub</span></li>
+                    <li class="section-item">Web-development:<span> HTML, CSS, JS</span></li>
+                </ul>
+            </section>
+            <section class="section" id="code">
+                <h2 class="section-title">Code Examples</h2>
+                <pre><code>def fib(n):
+    if n &lt;= 2:
+        return 1
+    else:
+        return fib(n-1) + fib(n-2)
+
+for i in range(1, 11):
+    print(fib(i)) 
+                    print(fib(i))</code></pre>
+            </section>
+            <section class="section" id="education">
+                <h2 class="section-title">Education</h2>
+                <ul class="section-list">
+                    <li class="section-item">School with a focus on learning IT</li>
+                    <li class="section-item">Unfinished St.Petersburg State Transport University</li>
+                    <li class="section-item">Self-development</li>
+                </ul>
+            </section>
+            <section class="section" id="language">
+                <h2 class="section-title">Language</h2>
+                <ul class="section-list">
+                    <li class="section-item">Russian - native</li>
+                    <li class="section-item">English - B2</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <a href="https://github.com/40iq" class="gh-link" title="GitHub" target="_blank"><img src="./assets/img/ghlogo.png" class="gh-logo" alt="GitLogo">GitHub</a>
+                <span>© Jule 2023</span>
+                <a href="https://rs.school/js/" class="rs-link" title="Rsschool" target="_blank"><img src="./assets/img/RsLogo.svg" alt="Rsschool" class="rs-logo"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
